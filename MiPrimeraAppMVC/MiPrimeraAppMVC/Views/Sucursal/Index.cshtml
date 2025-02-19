@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Sucursal</h1>
+
+<fieldset>
+    <form id="frmBusqueda" method="post" class="row g-3">
+        <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre Sucursal</label>
+            <input type="text" class="form-control" name="nombre" id="inputNombre">
+        </div>
+        <div class="col-md-6">
+            <label for="direccion" class="form-label">Direccion</label>
+            <input type="text" class="form-control" name="direccion" id="inputNombre">
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-success" onclick="BuscarSucursales()">Buscar</button>
+            <button type="button" class="btn btn-danger" onclick="LimpiarSucursales()">Limpiar</button>
+        </div>
+    </form>
+
+</fieldset>
+
+<div id="divTable">
+
+</div>
+
+<script src="~/js/generico.js"></script>
+<script src="~/js/sucursal.js"></script>
